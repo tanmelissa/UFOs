@@ -17,7 +17,25 @@ function buildTable(data){
         Object.values(dataRow).forEach((val) => {
             let cell = row.append("td");
             cell.text(val);
-            }
+            };
         );
     });
+};
+
+function handleClick() {
+    //grab the datetime value from the filter
+    let date = d3.select("#datetime").property("value");
+    let filteredData = tableData;
+
+    //check to see if a date was entered and filter the data accordingly
+    if (date) {
+        filteredData = filteredData.filter(row => row.datetime === date);
+    }
+
+    //rebuild the table using the filtered data
+    buildTable(filteredData);
 }
+
+d3.selectAll("#filter-btn").on("click", handleClick);
+
+buildTable(tableData);
