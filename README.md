@@ -21,6 +21,12 @@ When you wish to remove a filter, delete the text in the respective search box a
 
 ## Summary
 
+### Drawbacks
 A drawback of this new design is that since the filters are input boxes instead of drop-down menus, it can be hard for a user to know what are the options to search for. This can result in wasted time searching, for example, for shapes that have no entries.
 
 Another drawback of this design is that it doesn't allow you to sort the results. Sorting results could be very helpful in searching throuh information. For example, if you wanted to look for data about a certain city and you wanted to see the data in chronological order, or sorted by date, you wouldn't be able to. You would have to look at the data from a certain city in no specific order.
+
+### Recommendations
+A recommendation to improve upon this design would be to allow the user to select an item in the table to view in another window. Not all of the comments for each entry can be fully seen in the current design, so it would be nice if the user could select the item to be able to view the whole comment section.
+
+Another recommendation would be to standardize the duration data so that it could be added as a search filter. Currently, the duration data is not uniform (for example min vs minutes) which makes it hard to use it as a filter.
